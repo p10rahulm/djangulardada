@@ -1,12 +1,9 @@
 /**
- * Created by bhive on 28-11-2016.
- */
-/**
 * LoginController
 * @namespace cmath.authentication.controllers
 */
 (function () {
-  'use strict';
+  'use static';
 
   angular
     .module('cmath.authentication.controllers')
@@ -27,7 +24,7 @@
     /**
     * @name activate
     * @desc Actions to be performed when this controller is instantiated
-    * @memberOf cmath.authentication.controllers.LoginController
+    * @memberOf thinkster.authentication.controllers.LoginController
     */
     function activate() {
       // If the user is authenticated, they should not be here.
@@ -39,7 +36,7 @@
     /**
     * @name login
     * @desc Log the user in
-    * @memberOf cmath.authentication.controllers.LoginController
+    * @memberOf thinkster.authentication.controllers.LoginController
     */
     function login() {
       Authentication.login(vm.email, vm.password);
