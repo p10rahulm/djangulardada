@@ -20,12 +20,26 @@
     * @desc The Factory to be returned
     */
     var Authentication = {
+      login: login,
       register: register
     };
 
     return Authentication;
 
     ////////////////////
+      /**
+     * @name login
+     * @desc Try to log in with email `email` and password `password`
+     * @param {string} email The email entered by the user
+     * @param {string} password The password entered by the user
+     * @returns {Promise}
+     * @memberOf thinkster.authentication.services.Authentication
+     */
+    function login(email, password) {
+      return $http.post('/api/v1/auth/login/', {
+        email: email, password: password
+      });
+    }
 
     /**
     * @name register
@@ -46,16 +60,3 @@
   }
 })();
 
-/**
- * @name login
- * @desc Try to log in with email `email` and password `password`
- * @param {string} email The email entered by the user
- * @param {string} password The password entered by the user
- * @returns {Promise}
- * @memberOf thinkster.authentication.services.Authentication
- */
-function login(email, password) {
-  return $http.post('/api/v1/auth/login/', {
-    email: email, password: password
-  });
-}
