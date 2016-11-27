@@ -4,8 +4,6 @@
     <list default="true" id="8fc7c0a2-60f2-4767-a994-67363866c441" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/djangular/urls.py" afterPath="$PROJECT_DIR$/djangular/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascripts/cmath.js" afterPath="$PROJECT_DIR$/static/javascripts/cmath.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/javascripts.html" afterPath="$PROJECT_DIR$/templates/javascripts.html" />
     </list>
     <ignored path="SQLViewerApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangular/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -842,7 +840,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480278081734</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="updated urls.py imports as site not functioning">
+      <created>1480278687308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1480278687308</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -898,7 +903,8 @@
     <MESSAGE value="added dependency modules angular" />
     <MESSAGE value="angular dependencies flow all the way, so all have to be defined i suppose till the top level" />
     <MESSAGE value="hash config for routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="hash config for routing" />
+    <MESSAGE value="updated urls.py imports as site not functioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated urls.py imports as site not functioning" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1111,8 +1117,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangular/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
