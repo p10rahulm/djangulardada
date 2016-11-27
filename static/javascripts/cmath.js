@@ -8,7 +8,8 @@
     .module('cmath', [
         'cmath.config',
         'cmath.routes',
-        'cmath.authentication'
+        'cmath.authentication',
+        'cmath.layout'
     ]);
 
     angular
