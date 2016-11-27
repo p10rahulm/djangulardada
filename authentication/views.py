@@ -10,6 +10,17 @@ from django.contrib.auth import authenticate, login
 
 from rest_framework import status, views
 from rest_framework.response import Response
+from django.contrib.auth import logout
+
+from rest_framework import permissions
+
+class LogoutView(views.APIView):
+    permission_classes = (permissions.IsAuthenticated,)
+
+    def post(self, request, format=None):
+        logout(request)
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
 
 class AccountViewSet(viewsets.ModelViewSet):
