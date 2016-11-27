@@ -1,11 +1,11 @@
 /**
  * Created by bhive on 28-11-2016.
  */
-(function () {
+((function () {
   'use strict';
 
   angular
-    .module('authentication.services')
+    .module('cmath.authentication.services')
     .factory('Authentication', Authentication);
 
   Authentication.$inject = ['$cookies', '$http'];
@@ -34,6 +34,7 @@
     * @param {string} password The password entered by the user
     * @param {string} email The email entered by the user
     * @returns {Promise}
+    * @memberOf cmath.authentication.services.Authentication
     */
     function register(email, password, username) {
       return $http.post('/api/v1/accounts/', {

@@ -6,15 +6,16 @@
 
     angular
     .module('cmath', [
-      'routes',
-      'authentication'
+        'cmath.config',
+        'cmath.routes',
+        'cmath.authentication'
     ]);
 
     angular
-    .module('routes', ['ngRoute']);
+    .module('cmath.routes', ['ngRoute']);
 
     angular
-    .module('config', []);
+    .module('cmath.config', []);
 
 
     angular

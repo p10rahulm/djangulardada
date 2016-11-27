@@ -1,19 +1,15 @@
-/**
- * Created by bhive on 28-11-2016.
- */
-
 (function () {
   'use strict';
 
   angular
-    .module('authentication', [
-      'authentication.controllers',
-      'authentication.services'
+    .module('cmath.authentication', [
+      'cmath.authentication.controllers',
+      'cmath.authentication.services'
     ]);
 
   angular
-    .module('authentication.controllers', []);
+    .module('cmath.authentication.controllers', []);
 
   angular
-    .module('authentication.services', ['ngCookies']);
+    .module('cmath.authentication.services', ['ngCookies']);
 })();

@@ -1,16 +1,12 @@
 /**
- * Created by bhive on 28-11-2016.
- */
-
-/**
 * Register controller
-* @namespace authentication.controllers
+* @namespace cmath.authentication.controllers
 */
 (function () {
   'use strict';
 
   angular
-    .module('authentication.controllers')
+    .module('cmath.authentication.controllers')
     .controller('RegisterController', RegisterController);
 
   RegisterController.$inject = ['$location', '$scope', 'Authentication'];
@@ -26,7 +22,7 @@
     /**
     * @name register
     * @desc Register a new user
-    * @memberOf authentication.controllers.RegisterController
+    * @memberOf cmath.authentication.controllers.RegisterController
     */
     function register() {
       Authentication.register(vm.email, vm.password, vm.username);

@@ -5,7 +5,7 @@
   'use strict';
 
   angular
-    .module('config')
+    .module('cmath.config')
     .config(config);
 
   config.$inject = ['$locationProvider'];

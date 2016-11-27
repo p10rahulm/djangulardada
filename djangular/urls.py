@@ -1,9 +1,8 @@
 from django.conf.urls import include, patterns, url
-
 from rest_framework_nested import routers
 
-from authentication.views import AccountViewSet
 from djangular.views import IndexView
+from authentication.views import AccountViewSet
 
 router = routers.SimpleRouter()
 router.register(r'accounts', AccountViewSet)
