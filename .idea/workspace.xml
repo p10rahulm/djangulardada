@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8fc7c0a2-60f2-4767-a994-67363866c441" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/javascripts/layout/controllers/navbar.controller.js" afterPath="$PROJECT_DIR$/static/javascripts/layout/controllers/navbar.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/navbar.html" afterPath="$PROJECT_DIR$/templates/navbar.html" />
     </list>
     <ignored path="SQLViewerApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navbar.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navbar.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/javascripts/layout/controllers/navbar.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="94">
@@ -95,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/templates/authentication/login.html">
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="134" lean-forward="false" selection-start-line="15" selection-start-column="134" selection-end-line="15" selection-end-column="134" />
+            <state relative-caret-position="0">
+              <caret line="0" column="92" lean-forward="false" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -192,6 +192,7 @@
         <option value="$PROJECT_DIR$/djangular/urls.py" />
         <option value="$PROJECT_DIR$/static/javascripts/authentication/services/authentication.service.js" />
         <option value="$PROJECT_DIR$/static/javascripts/layout/controllers/navbar.controller.js" />
+        <option value="$PROJECT_DIR$/templates/navbar.html" />
       </list>
     </option>
   </component>
@@ -926,7 +927,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480286635921</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added navbar for logout">
+      <created>1480286660688</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1480286660688</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1032,14 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1249,6 +1249,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="92" lean-forward="false" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
           <folding />
         </state>
       </provider>
