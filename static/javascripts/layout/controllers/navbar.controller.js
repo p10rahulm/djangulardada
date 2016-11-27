@@ -10,7 +10,7 @@
   'use strict';
 
   angular
-    .module('thinkster.layout.controllers')
+    .module('cmath.layout.controllers')
     .controller('NavbarController', NavbarController);
 
   NavbarController.$inject = ['$scope', 'Authentication'];
