@@ -1,7 +1,8 @@
 /**
-* Register controller
+* LoginController
 * @namespace cmath.authentication.controllers
 */
+
 (function () {
   'use strict';
 

@@ -1,6 +1,10 @@
 /**
  * Created by bhive on 28-11-2016.
  */
+/**
+ * Authentication
+ * @namespace cmath.authentication.services
+*/
 (function () {
   'use strict';
 
