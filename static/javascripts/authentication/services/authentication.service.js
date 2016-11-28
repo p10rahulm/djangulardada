@@ -110,6 +110,34 @@
       delete $cookies.authenticatedAccount;
     }
     /**
+     * @name logout
+     * @desc Try to log the user out
+     * @returns {Promise}
+     * @memberOf cmath.authentication.services.Authentication
+     */
+    function logout() {
+      return $http.post('/api/v1/auth/logout/')
+        .then(logoutSuccessFn, logoutErrorFn);
+
+      /**
+       * @name logoutSuccessFn
+       * @desc Unauthenticate and redirect to index with page reload
+       */
+      function logoutSuccessFn(data, status, headers, config) {
+        Authentication.unauthenticate();
+
+        window.location = '/';
+      }
+
+      /**
+       * @name logoutErrorFn
+       * @desc Log "Epic failure!" to the console
+       */
+      function logoutErrorFn(data, status, headers, config) {
+        console.error('Epic failure!');
+      }
+    }
+    /**
     * @name register
     * @desc Try to register a new user
     * @param {string} username The username entered by the user
@@ -132,34 +160,7 @@
       function registerSuccessFn(data, status, headers, config) {
         Authentication.login(email, password);
       }
-        /**
-         * @name logout
-         * @desc Try to log the user out
-         * @returns {Promise}
-         * @memberOf cmath.authentication.services.Authentication
-         */
-        function logout() {
-          return $http.post('/api/v1/auth/logout/')
-            .then(logoutSuccessFn, logoutErrorFn);
 
-          /**
-           * @name logoutSuccessFn
-           * @desc Unauthenticate and redirect to index with page reload
-           */
-          function logoutSuccessFn(data, status, headers, config) {
-            Authentication.unauthenticate();
-
-            window.location = '/';
-          }
-
-          /**
-           * @name logoutErrorFn
-           * @desc Log "Epic failure!" to the console
-           */
-          function logoutErrorFn(data, status, headers, config) {
-            console.error('Epic failure!');
-          }
-        }
       /**
       * @name registerErrorFn
       * @desc Log "Epic failure!" to the console
